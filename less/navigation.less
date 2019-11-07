@@ -1,14 +1,30 @@
 // Navigation Styles here
 .navigation {
- // width: 800px;
- // max-width: 800px;
- // margin: 0 auto;
+ @media @phone {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // border: 1px solid red;
+ }
+ 
  display: flex;
  flex-direction: flex-end;
  justify-content: space-between;
  width: 100%;
- border-bottom: 2px dashed grey;
+ border-bottom: 2px dashed lightgrey;
  .links {
+  @media @phone {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  // border: 1px solid black;
+  text-decoration: none;
+  color: black;
+  a{
+   color: black;
+  }
+ }
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,11 +34,17 @@
   font-size: 2rem;
   align-items: flex-end;
   a {
+   color: black;
    text-decoration: none;
   }
  }
  .fbus {
-  border: 1px solid grey;
+  @media @phone {
+   margin: 0 auto;
+   text-align: center;
+   // border: 1px solid blue;
+ }
+  // border: 1px solid grey;
   margin-left: 35%;
   padding-top: 1%;
  }

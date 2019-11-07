@@ -168,12 +168,25 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+}
 .navigation {
   display: flex;
   flex-direction: flex-end;
   justify-content: space-between;
   width: 100%;
-  border-bottom: 2px dashed grey;
+  border-bottom: 2px dashed lightgrey;
+}
+@media (max-width: 500px) {
+  .navigation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .navigation .links {
   display: flex;
@@ -185,13 +198,31 @@ img {
   font-size: 2rem;
   align-items: flex-end;
 }
+@media (max-width: 500px) {
+  .navigation .links {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    color: black;
+  }
+  .navigation .links a {
+    color: black;
+  }
+}
 .navigation .links a {
+  color: black;
   text-decoration: none;
 }
 .navigation .fbus {
-  border: 1px solid grey;
   margin-left: 35%;
   padding-top: 1%;
+}
+@media (max-width: 500px) {
+  .navigation .fbus {
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 .footer {
   width: 100%;
@@ -210,6 +241,13 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    width: 90%;
+    padding: 4%;
+    margin: 0 auto;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
@@ -218,12 +256,18 @@ img {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 90%;
+    margin-top: 30%;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
 }
 .home .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed grey;
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -246,12 +290,51 @@ img {
   display: flex;
   justify-content: space-between;
 }
+.home .content-pick .btn {
+  background: #0c5c4d;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding: 5% 0%;
+  border-radius: 15px;
+  width: 80%;
+  height: 18%;
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  header {
+    margin: 0 auto;
+    width: 90%;
+    padding: 4%;
+  }
 }
 header .funbus {
   width: 800px;
   max-width: 800px;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  header .funbus {
+    width: 100%;
+  }
+}
+header .welcome {
+  width: 800px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 1%;
+  border-top: 2px dashed lightgray;
+}
+@media (max-width: 500px) {
+  header .welcome {
+    width: 100%;
+    padding-top: 1%;
+    border-bottom: 2px dashed lightgrey;
+  }
+}
+header .welcome h2 {
+  margin-top: 1%;
 }
