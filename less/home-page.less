@@ -5,10 +5,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @phone {
+      width: 90%;
+      height: 0%;
+      padding: 2%;
+      margin: 0 auto;
 
-   
-    
+    }
     .text-content {
+      @media @phone {
+        width: 100%; 
+      }
       width: 48%;
       padding-right: 1%;
     }
@@ -16,6 +23,9 @@
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @phone {
+        width: 90%;
+      }
 
       img {
         border-radius: 10px;
@@ -24,14 +34,21 @@
   }
 
   .inverse-content {
+    @media @phone {
+      // border: 1px solid black;
+      flex-direction: column;
+      flex-direction: column-reverse;
+    }
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
-
+    border-bottom: 2px dashed grey; 
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      @media @phone {
+        width: 90%;
+        // border: 1px solid green;
+      }
     }
-
     .img-content {
       padding-right: 1%;
       padding-left: 0;
@@ -41,21 +58,72 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-
+      @media @phone {
+        margin-top: 4%;
+      }
     img {
       border-radius: 10px;
     }
   }
 
   .content-pick {
+    @media @phone {
+      flex-direction: column;
+      align-items: center;
+      width: 91%;
+    }
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
     .destination {
+      @media @phone {
+        margin-left: 20%;
+        width: 80%;
+      }
       width: 30%;
       margin-bottom: 30px;
     }
   }
 }// home
+
+  .btn {
+    .btns(@eastern-blue, @white);
+  background: linear-gradient(-45deg, black, #17A2B8, coral, lightgreen);
+  background-size: 200% 200%;
+  animation: gradientBG 15s ease infinite;
+}
+
+header {
+  @media @phone {
+    margin: 0 auto;
+    width: 90%;
+    padding: 4%;
+    // border: 1px solid red;
+  }
+  .funbus {
+    width: 800px;
+    max-width: 800px;
+    margin: 0 auto;
+      @media @phone {
+      max-width: 100%;
+      border-top: 1px dashed @silver;
+    }
+  }
+  .welcome {
+      @media @phone {
+    width: 100%;
+    padding-top: 1%;
+    border-bottom: 2px dashed @silver;
+    border-top: none;
+  }
+    width: 800px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 1%;
+    border-top: 2px dashed @silver;
+    h2 {
+      margin-top: 1%;
+    }
+  }
+}
