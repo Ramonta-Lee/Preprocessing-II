@@ -1,29 +1,24 @@
 // Navigation Styles here
 .navigation {
  @media @phone {
-  width: 100%;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  // border: 1px solid red;
  }
  
  display: flex;
  flex-direction: flex-end;
  justify-content: space-between;
  width: 100%;
- border-bottom: 2px dashed lightgrey;
+ border-bottom: 2px dashed @silver;
  .links {
   @media @phone {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  // border: 1px solid black;
-  text-decoration: none;
-  color: black;
-  a{
+   display: flex;
+   justify-content: space-evenly;
+   width: 100%;
+   text-decoration: none;
    color: black;
-  }
+    a{
+     color: black;
+    }
  }
   display: flex;
   justify-content: space-between;
@@ -39,12 +34,10 @@
   }
  }
  .fbus {
-  @media @phone {
-   margin: 0 auto;
-   text-align: center;
-   // border: 1px solid blue;
- }
-  // border: 1px solid grey;
+   @media @phone {
+    margin: 0 auto;
+    text-align: center;
+   }
   margin-left: 35%;
   padding-top: 1%;
  }

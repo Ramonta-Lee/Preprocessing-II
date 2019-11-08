@@ -8,7 +8,7 @@
     @media @phone {
       width: 90%;
       height: 0%;
-      padding: 4%;
+      padding: 2%;
       margin: 0 auto;
 
     }
@@ -25,7 +25,6 @@
       padding-left: 1%;
       @media @phone {
         width: 90%;
-        margin-top: 30%;
       }
 
       img {
@@ -59,7 +58,9 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-
+      @media @phone {
+        margin-top: 4%;
+      }
     img {
       border-radius: 10px;
     }
@@ -69,25 +70,29 @@
     @media @phone {
       flex-direction: column;
       align-items: center;
-      width: 90%;
-      margin: 0 auto;
+      width: 91%;
     }
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-    .btn {
-      .btn(#0c5c4d,white);
-    }
     .destination {
       @media @phone {
-        width: 70%;
+        margin-left: 20%;
+        width: 80%;
       }
       width: 30%;
       margin-bottom: 30px;
     }
   }
 }// home
+
+  .btn {
+    .btns(@eastern-blue, @white);
+  background: linear-gradient(-45deg, black, #17A2B8, coral, lightgreen);
+  background-size: 200% 200%;
+  animation: gradientBG 15s ease infinite;
+}
 
 header {
   @media @phone {
@@ -101,20 +106,22 @@ header {
     max-width: 800px;
     margin: 0 auto;
       @media @phone {
-    width: 100%;
-  }
+      max-width: 100%;
+      border-top: 1px dashed @silver;
+    }
   }
   .welcome {
       @media @phone {
     width: 100%;
     padding-top: 1%;
-    border-bottom: 2px dashed lightgrey;
+    border-bottom: 2px dashed @silver;
+    border-top: none;
   }
     width: 800px;
     max-width: 800px;
     margin: 0 auto;
     margin-top: 1%;
-    border-top: 2px dashed lightgray;
+    border-top: 2px dashed @silver;
     h2 {
       margin-top: 1%;
     }
